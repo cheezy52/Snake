@@ -1,16 +1,30 @@
 <html>
   <head>
+    <meta charset="utf-8"></meta>
     <script src='./lib/snake.js'> </script>
     <script src='./lib/board.js'> </script>
     <script src='./lib/snakeUI.js'> </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/snake.css"></link>
+
+    <script>
+    $(document).ready(function() {
+      var s = new SnakeGame.SnakeUI(document.getElementById("snakepit"));
+      console.log(document.getElementById("snakepit"));
+      s.start();
+    });
+    </script>
+
   </head>
   <body>
-    <div id="snakepit">
-      <script>
-      var s = new SnakeGame.SnakeUI(document.getElementById("snakepit"));
-      s.start();
-      </script>
-    </div>
+    <h1>Welcome to the ~SNAKE_PIT~</h1>
+
+    <table id="snakepit">
+    </table>
+
+    <h3>High Scores</h3>
+    <table id="highscores">
+    </table>
+
   </body>
 </html>

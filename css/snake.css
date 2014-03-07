@@ -1,0 +1,32 @@
+table#snakepit {
+  width: 500px;
+  border: 2px solid black;
+}
+
+tr {
+  height: 50px;
+  width: 50px;
+}
+
+td.snake {
+  font-size: 2.5em;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  background-color: gray;
+}
+
+td.snake.head {
+  background-color: green;
+}
+
+td.apple {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+td.empty {
+  height: 50px;
+  width: 50px;
+}
